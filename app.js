@@ -40,7 +40,7 @@ document.querySelector('.btn-hold').addEventListener('click',function(){
 		score[activePlayer]+=roundScore;
 		document.getElementById('score-'+activePlayer).textContent=score[activePlayer];
 	
-	if (score[activePlayer]>=30){
+	if (score[activePlayer]>=100){
 		document.querySelector('.dice').style.display='none';
 		document.querySelector('#name-'+activePlayer).textContent='Winner!';
 		document.querySelector('.player-'+activePlayer+'-panel').classList.add('winner');
